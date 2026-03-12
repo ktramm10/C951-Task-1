@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+
+
+<map name="increment">
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+7 8
+8 9
+9 10
+</map>
+
+    <!-- APTITUDE TEST QUESTION 1 LOGIC --> 
+<topic name="APTITUDEQ1">
+    
+
+    
+    <!-- Answer 1 Logic -->
+    
+    <category>
+        <pattern>1</pattern>
+        <template>
+            
+            <!-- some sort of logic to manage scoring -->
+            Technology has no shortage of problems to solve. <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic">APTITUDEQ2</set>
+            <set name="IT"> <map name="increment"><get name="IT"/></map></set>
+        </think>
+        
+        <br/><br/>
+        What language do you have the most experience developing in?
+        <br/><br/>
+        1. C++ <br/>
+        2. Java <br/>
+        3. HTML <br/>
+        4. Python
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* 1 *</pattern>
+        <template>
+            <srai>1</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>1 *</pattern>
+        <template>
+            <srai>1</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HELPING</pattern>
+        <template>
+            <srai>1</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HELPING *</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <!-- Answer 2 Logic -->
+    
+    <category>
+        <pattern>2</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring  -->
+            Creativity is the lifeblood of all innovation! <br/><br/>
+        <random>
+            <li> A wonderful answer indeed!</li>
+            <li> Great choice!</li>
+            <li> Duly noted!</li>
+        </random>
+        
+        <think>
+            <set name="topic">APTITUDEQ2</set>
+            <set name="WebDev"> <map name="increment"><get name="WebDev"/></map></set>
+            <set name="AIDev"> <map name="increment"><get name="AIDev"/></map></set>
+            <set name="GameDev"> <map name="increment"><get name="GameDev"/></map></set>
+        </think>
+        
+        <br/><br/>
+        What language do you have the most experience developing in?
+        <br/><br/>
+        1. C++ <br/>
+        2. Java <br/>
+        3. HTML <br/>
+        4. Python
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* 2 *</pattern>
+        <template>
+            <srai>2</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>2 *</pattern>
+        <template>
+            <srai>2</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CREATIVITY</pattern>
+        <template>
+            <srai>2</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CREATIVITY *</pattern>
+        <template>
+            <srai>2</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* CREATIVITY *</pattern>
+        <template>
+            <srai>2</srai>
+        </template>
+    </category>
+    
+    <!-- Answer 3 Logic -->
+    
+    <category>
+        <pattern>3</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            Protecting others from harm is very noble. <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic">APTITUDEQ2</set>
+            <set name="CyberSec"> <map name="increment"><get name="CyberSec"/></map></set>
+        </think>
+        
+        <br/><br/>
+        What language do you have the most experience developing in?
+        <br/><br/>
+        1. C++ <br/>
+        2. Java <br/>
+        3. HTML <br/>
+        4. Python
+        </template>
+    </category>
+    
+    <category>
+        <pattern>3 *</pattern>
+        <template>
+            <srai>3</srai>
+        </template>
+        
+    </category>
+    
+    <category>
+        <pattern>* 3 *</pattern>
+        <template>
+            <srai>3</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>PROTECTING</pattern>
+        <template>
+            <srai>3</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>PROTECTING *</pattern>
+        <template>
+            <srai>3</srai>
+        </template>
+    </category>
+    
+    <!-- Fallback -->
+    <category>
+        <pattern>*</pattern>
+        <template>I'm having a difficult time understanding your answer. Could you tell me again more clearly?</template>
+    </category>
+</topic>
+
+    <!-- APTITUDE TEST QUESTION 2 LOGIC --> 
+<topic name="APTITUDEQ2">
+    <category>
+        <pattern>1</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            Look out for memory leaks! <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic">APTITUDEQ3</set>
+            <set name="GameDev"> <map name="increment"><get name="GameDev"/></map></set>
+        </think>
+        
+        <br/><br/>
+        Which of these options sounds the most interesting to you?
+        <br/><br/>
+        1. AI <br/>
+        2. Websites <br/>
+        3. Video Games <br/>
+        4. Hacking <br/>
+        5. Reparing broken things
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>1 *</pattern>
+        <template>
+            <srai>1</srai>
+        </template>
+        
+    </category>
+    
+    <category>
+        <pattern>* 1 *</pattern>
+        <template>
+            <srai>1</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* 1</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+        <pattern>C++</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+        <pattern>C++ *</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* C++ *</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* C++</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    
+    <category>
+        <pattern>2</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            The hit game minecraft was originally coded in java. <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic">APTITUDEQ3</set>
+            <set name="WebDev"> <map name="increment"><get name="WebDev"/></map></set>
+        </think>
+        
+        <br/><br/>
+        Which of these options sounds the most interesting to you?
+        <br/><br/>
+        1. AI <br/>
+        2. Websites <br/>
+        3. Video Games <br/>
+        4. Hacking <br/>
+        5. Reparing broken things
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* 2 *</pattern>
+        <template>
+            <srai>2</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>2 *</pattern>
+        <template>
+            <srai>2</srai>
+        </template>
+        
+    </category>
+    
+    <category>
+        <pattern>* 2 *</pattern>
+        <template>
+            <srai>2</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* 2</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>JAVA</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>JAVA *</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* JAVA *</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* JAVA</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>3</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            Make sure to close all your tags! <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic">APTITUDEQ3</set>
+            <set name="WebDev"> <map name="increment"><get name="WebDev"/></map></set>
+        </think>
+        
+        <br/><br/>
+        Which of these options sounds the most interesting to you?
+        <br/><br/>
+        1. AI <br/>
+        2. Websites <br/>
+        3. Video Games <br/>
+        4. Hacking <br/>
+        5. Reparing broken things
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>3 *</pattern>
+        <template>
+            <srai>3</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>3 *</pattern>
+        <template>
+            <srai>3</srai>
+        </template>
+        
+    </category>
+    
+    <category>
+        <pattern>* 3 *</pattern>
+        <template>
+            <srai>3</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* 3</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HTML</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HTML *</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* HTML *</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* HTML</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>4</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            Python is a great language foundation. <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic">APTITUDEQ3</set>
+            <set name="CyberSec"> <map name="increment"><get name="CyberSec"/></map></set>
+            <set name="AIDev"> <map name="increment"><get name="AIDev"/></map></set>
+            </think>
+        <br/><br/>
+        Which of these options sounds the most interesting to you?
+        <br/><br/>
+        1. AI <br/>
+        2. Websites <br/>
+        3. Video Games <br/>
+        4. Hacking <br/>
+        5. Reparing broken things
+        </template>
+    </category>
+    
+    <category>
+        <pattern>4 *</pattern>
+        <template>
+            <srai>4</srai>
+        </template>
+        
+    </category>
+    
+    <category>
+        <pattern>* 4 *</pattern>
+        <template>
+            <srai>4</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* 4</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Python</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Python *</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* Python *</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* Python</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <template>I'm having a difficult time understanding your answer. Could you tell me again more clearly?</template>
+    </category>
+    
+</topic>
+
+<topic name="APTITUDEQ3">
+    <category>
+    
+        <pattern>1</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            AI if the future of technology <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic"></set>
+            <set name="AIDev"> <map name="increment"><get name="AIDev"/></map></set>
+        </think>
+        
+        <br/><br/>
+        RESULTS:
+        <br/><br/>
+        
+        <!-- AI DEV Results -->
+        <condition name="AIDev">
+            <li value="0">- I don't think AI Development is the right choice for you.</li>
+            <li value="1">- AI Development could be potential option for you.</li>
+            <li value="2">- I think AI Development would be solid fit for you.</li>
+            <li>- AI Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- WEB DEV Results -->
+        <condition name="WebDev">
+            <li value="0">- I dont think Web Development is the right choice for you.</li>
+            <li value="1">- Web Development could be potential option for you.</li>
+            <li value="2">- I think Web Development would be solid fit for you.</li>
+            <li>- Web Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- GAME DEV Results -->
+        <condition name="GameDev">
+            <li value="0">- I dont think Game Development is the right choice for you.</li>
+            <li value="1">- Game Development could be potential option for you.</li>
+            <li value="2">- I think Game Development would be solid fit for you.</li>
+            <li>- Game Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- CYBER SECURITY Results -->
+        <condition name="CyberSec">
+            <li value="0">- I dont think Cyber Security is the right choice for you.</li>
+            <li value="1">- Cyber Security could be potential option for you.</li>
+            <li value="2">- I think Cyber Security would be solid fit for you.</li>
+            <li>-  Cyber Security would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- IT Results -->
+        <condition name="IT">
+            <li value="0">- I dont think Information Technology is the right choice for you.</li>
+            <li value="1">- Information Technology could be potential option for you.</li>
+            <li value="2">- I think Information Technology would be solid fit for you.</li>
+            <li>- Information Technology would be an amazing choice for your career.</li>
+        </condition>
+        
+        
+        
+        <!-- Logic to determine and express your selected aptitude -->
+        </template>
+    </category>
+    
+    <category>
+        <pattern>1 *</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* 1 *</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* 1</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+        <pattern>AI</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+        <pattern>AI *</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+        <category>
+        <pattern>* AI *</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* AI</pattern>
+        <template><srai>1</srai></template>
+    </category>
+    
+    <category>
+    
+        <pattern>2</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            Websites are essential in the modern world. <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic"></set>
+            <set name="WebDev"> <map name="increment"><get name="WebDev"/></map></set>
+            </think>
+                
+        <br/><br/>
+        RESULTS:
+        <br/><br/>
+        
+        <!-- AI DEV Results -->
+        <condition name="AIDev">
+            <li value="0">- I don't think AI Development is the right choice for you.</li>
+            <li value="1">- AI Development could be potential option for you.</li>
+            <li value="2">- I think AI Development would be solid fit for you.</li>
+            <li>- AI Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- WEB DEV Results -->
+        <condition name="WebDev">
+            <li value="0">- I dont think Web Development is the right choice for you.</li>
+            <li value="1">- Web Development could be potential option for you.</li>
+            <li value="2">- I think Web Development would be solid fit for you.</li>
+            <li>- Web Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- GAME DEV Results -->
+        <condition name="GameDev">
+            <li value="0">- I dont think Game Development is the right choice for you.</li>
+            <li value="1">- Game Development could be potential option for you.</li>
+            <li value="2">- I think Game Development would be solid fit for you.</li>
+            <li>- Game Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- CYBER SECURITY Results -->
+        <condition name="CyberSec">
+            <li value="0">- I dont think Cyber Security is the right choice for you.</li>
+            <li value="1">- Cyber Security could be potential option for you.</li>
+            <li value="2">- I think Cyber Security would be solid fit for you.</li>
+            <li>-  Cyber Security would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- IT Results -->
+        <condition name="IT">
+            <li value="0">- I dont think Information Technology is the right choice for you.</li>
+            <li value="1">- Information Technology could be potential option for you.</li>
+            <li value="2">- I think Information Technology would be solid fit for you.</li>
+            <li>- Information Technology would be an amazing choice for your career.</li>
+        </condition>
+        
+        
+        
+        <!-- Logic to determine and express your selected aptitude -->
+        </template>
+    </category>
+    
+    <category>
+        <pattern>2 *</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* 2 *</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* 2</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Websites</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Website*</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Websites *</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* Websites *</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* Websites</pattern>
+        <template><srai>2</srai></template>
+    </category>
+    
+    
+    
+    <category>
+    
+        <pattern>3</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            Who doesn't love video games! <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic"></set>
+            <set name="GameDev"> <map name="increment"><get name="GameDev"/></map></set>
+        </think>
+        <br/><br/>
+        RESULTS:
+        <br/><br/>
+        
+        <!-- AI DEV Results -->
+        <condition name="AIDev">
+            <li value="0">- I don't think AI Development is the right choice for you.</li>
+            <li value="1">- AI Development could be potential option for you.</li>
+            <li value="2">- I think AI Development would be solid fit for you.</li>
+            <li>- AI Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- WEB DEV Results -->
+        <condition name="WebDev">
+            <li value="0">- I dont think Web Development is the right choice for you.</li>
+            <li value="1">- Web Development could be potential option for you.</li>
+            <li value="2">- I think Web Development would be solid fit for you.</li>
+            <li>- Web Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- GAME DEV Results -->
+        <condition name="GameDev">
+            <li value="0">- I dont think Game Development is the right choice for you.</li>
+            <li value="1">- Game Development could be potential option for you.</li>
+            <li value="2">- I think Game Development would be solid fit for you.</li>
+            <li>- Game Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- CYBER SECURITY Results -->
+        <condition name="CyberSec">
+            <li value="0">- I dont think Cyber Security is the right choice for you.</li>
+            <li value="1">- Cyber Security could be potential option for you.</li>
+            <li value="2">- I think Cyber Security would be solid fit for you.</li>
+            <li>-  Cyber Security would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- IT Results -->
+        <condition name="IT">
+            <li value="0">- I dont think Information Technology is the right choice for you.</li>
+            <li value="1">- Information Technology could be potential option for you.</li>
+            <li value="2">- I think Information Technology would be solid fit for you.</li>
+            <li>- Information Technology would be an amazing choice for your career.</li>
+        </condition>
+        <!-- Logic to determine and express your selected aptitude -->
+        </template>
+    </category>
+    
+    <category>
+        <pattern>3 *</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* 3 *</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>VIDEO GAMES</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+        <category>
+        <pattern>GAMES</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>GAMEs *</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* GAMES</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* GAMES *</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>VIDEO GAMES *</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* VIDEO GAMES *</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* VIDEO GAMES</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    
+    <category>
+        <pattern>* 3</pattern>
+        <template><srai>3</srai></template>
+    </category>
+    
+    <category>
+    
+        <pattern>4</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            Lookout for those rogue access points! <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic"></set>
+            <set name="CyberSec"> <map name="increment"><get name="CyberSec"/></map></set>
+        </think>
+        <br/><br/>
+        RESULTS:
+        <br/><br/>
+        
+        <!-- AI DEV Results -->
+        <condition name="AIDev">
+            <li value="0">- I don't think AI Development is the right choice for you.</li>
+            <li value="1">- AI Development could be potential option for you.</li>
+            <li value="2">- I think AI Development would be solid fit for you.</li>
+            <li>- AI Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- WEB DEV Results -->
+        <condition name="WebDev">
+            <li value="0">- I dont think Web Development is the right choice for you.</li>
+            <li value="1">- Web Development could be potential option for you.</li>
+            <li value="2">- I think Web Development would be solid fit for you.</li>
+            <li>- Web Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- GAME DEV Results -->
+        <condition name="GameDev">
+            <li value="0">- I dont think Game Development is the right choice for you.</li>
+            <li value="1">- Game Development could be potential option for you.</li>
+            <li value="2">- I think Game Development would be solid fit for you.</li>
+            <li>- Game Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- CYBER SECURITY Results -->
+        <condition name="CyberSec">
+            <li value="0">- I dont think Cyber Security is the right choice for you.</li>
+            <li value="1">- Cyber Security could be potential option for you.</li>
+            <li value="2">- I think Cyber Security would be solid fit for you.</li>
+            <li>-  Cyber Security would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- IT Results -->
+        <condition name="IT">
+            <li value="0">- I dont think Information Technology is the right choice for you.</li>
+            <li value="1">- Information Technology could be potential option for you.</li>
+            <li value="2">- I think Information Technology would be solid fit for you.</li>
+            <li>- Information Technology would be an amazing choice for your career.</li>
+        </condition>
+        <!-- Logic to determine and express your selected aptitude -->
+        </template>
+    </category>
+    
+    <category>
+        <pattern>4 *</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* 4 *</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* 4</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HACKING</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HACKING *</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* HACKING *</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* HACKING</pattern>
+        <template><srai>4</srai></template>
+    </category>
+    
+    <category>
+    
+        <pattern>5</pattern>
+        <template>
+            
+            <!-- Some sort of logic for scoring -->
+            All code will eventually need to be updated or repaired. <br/><br/>
+        <random>
+            <li>A wonderful answer indeed!</li>
+            <li>Great choice!</li>
+            <li>Duly noted!</li>
+        </random>
+        <think>
+            <set name="topic"></set>
+            <set name="IT"> <map name="increment"><get name="IT"/></map></set>
+        </think>
+        <br/><br/>
+        RESULTS:
+        <br/><br/>
+        
+        <!-- AI DEV Results -->
+        <condition name="AIDev">
+            <li value="0">- I don't think AI Development is the right choice for you.</li>
+            <li value="1">- AI Development could be potential option for you.</li>
+            <li value="2">- I think AI Development would be solid fit for you.</li>
+            <li>- AI Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- WEB DEV Results -->
+        <condition name="WebDev">
+            <li value="0">- I dont think Web Development is the right choice for you.</li>
+            <li value="1">- Web Development could be potential option for you.</li>
+            <li value="2">- I think Web Development would be solid fit for you.</li>
+            <li>- Web Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- GAME DEV Results -->
+        <condition name="GameDev">
+            <li value="0">- I dont think Game Development is the right choice for you.</li>
+            <li value="1">- Game Development could be potential option for you.</li>
+            <li value="2">- I think Game Development would be solid fit for you.</li>
+            <li>- Game Development would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- CYBER SECURITY Results -->
+        <condition name="CyberSec">
+            <li value="0">- I dont think Cyber Security is the right choice for you.</li>
+            <li value="1">- Cyber Security could be potential option for you.</li>
+            <li value="2">- I think Cyber Security would be solid fit for you.</li>
+            <li>- Cyber Security would be an amazing choice for your career.</li>
+        </condition>
+        
+        <br/><br/>
+        <!-- IT Results -->
+        <condition name="IT">
+            <li value="0">- I dont think Information Technology is the right choice for you.</li>
+            <li value="1">- Information Technology could be potential option for you.</li>
+            <li value="2">- I think Information Technology would be solid fit for you.</li>
+            <li>- Information Technology would be an amazing choice for your career.</li>
+        </condition>
+           
+        </template>
+    </category>
+    
+    <category>
+        <pattern>5 *</pattern>
+        <template><srai>5</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* 5 *</pattern>
+        <template><srai>5</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* 5</pattern>
+        <template><srai>5</srai></template>
+    </category>
+    
+    <category>
+        <pattern>REPAIRING</pattern>
+        <template><srai>5</srai></template>
+    </category>
+    
+    <category>
+        <pattern>REPAIRING *</pattern>
+        <template><srai>5</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* REPAIRING</pattern>
+        <template><srai>5</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* REPAIRING *</pattern>
+        <template><srai>5</srai></template>
+    </category>
+    
+</topic>
+
+</aiml>
