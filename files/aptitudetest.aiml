@@ -256,22 +256,22 @@
     </category>
     
     <category>
-        <pattern>C++</pattern>
+        <pattern>C</pattern>
         <template><srai>1</srai></template>
     </category>
     
     <category>
-        <pattern>C++ *</pattern>
+        <pattern>C *</pattern>
         <template><srai>1</srai></template>
     </category>
     
     <category>
-        <pattern>* C++ *</pattern>
+        <pattern>* C *</pattern>
         <template><srai>1</srai></template>
     </category>
     
     <category>
-        <pattern>* C++</pattern>
+        <pattern>* C</pattern>
         <template><srai>1</srai></template>
     </category>
     

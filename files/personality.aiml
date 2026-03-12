@@ -1312,11 +1312,10 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
     <random>
       <li>Hi nice to see you!</li>
       <li>Hi it's great to see you!</li>
-      <li>Hi how are you?</li>
       <li>Hi! I can really feel your smile today.</li>
       <li>Hi! It's delightful to see you.</li>
     </random>
-    <br/>Would you like to take an aptitude test to determine your dream career?
+    <br/><br/>Would you like to take an aptitude test to determine your dream career?
     
     <think><set name="topic">APTITUDE</set></think>
     
